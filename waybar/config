@@ -1,0 +1,29 @@
+{
+    "layer": "top",
+    "modules-left": ["workspaces"],
+    "modules-center": ["spotify"],
+    "modules-right": ["pulseaudio", "network", "battery", "clock"],
+    "style": {
+        "height": "30px",
+        "padding": "5px",
+        "background": "#222222",
+        "color": "#ffffff"
+    },
+    "module": {
+        "clock": {
+            "format": "{:%Y-%m-%d %H:%M}"
+        },
+        "spotify": {
+            "format": "{artist} - {title}",
+            "format-stopped": "No music playing",
+            "format-paused": "{artist} - {title} (paused)"
+        },
+        "workspaces": {
+            "format": "{name}",
+            "disable-scroll": true
+        },
+        "pulseaudio": {
+            "format": "🔊 {volume}%"
+        }
+    }
+}
