@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["workspaces"],
     "modules-center": ["spotify"],
-    "modules-right": ["pulseaudio", "network", "battery", "clock"],
+    "modules-right": ["pulseaudio", "network", "battery", "clock", "custom/start"],
     "style": {
         "height": "30px",
         "padding": "5px",
@@ -25,5 +25,10 @@
         "pulseaudio": {
             "format": "🔊 {volume}%"
         }
+    },
+    "custom/start": {
+        "format": "⚙️",
+        "on-click": "sh ~/path/to/system-actions.sh",
+        "tooltip": "System Actions"
     }
 }
