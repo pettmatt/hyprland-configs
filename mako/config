@@ -4,7 +4,9 @@ margin=10
 
 # Style
 width=300
+padding=5
 border-size=2
+border-radius=2
 border-color=#4c566a
 background-color=#2e3440
 text-color=#eceff4
@@ -13,3 +15,9 @@ font=Sans 10
 # Animation
 animations=slide-right
 max-visible=5
+
+# Others
+max-history=20
+sort=-time
+markup=1
+max-visible=3
