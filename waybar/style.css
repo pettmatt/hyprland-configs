@@ -35,8 +35,6 @@ window#waybar.chromium {
     border: none;
 }
 
-
-
 button {
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
@@ -79,7 +77,6 @@ button:hover {
     color: #ffffff;
     opacity: 1;
 }
-
 
 #workspaces button.active {
     color: #76946a;
@@ -180,12 +177,10 @@ label:focus {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-
 #backlight {
     background-color: transparent;
     border-radius: 3px;
 }
-
 
 #pulseaudio {
     background-color: transparent;

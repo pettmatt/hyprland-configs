@@ -9,11 +9,11 @@
     "exclusive": "true",
     // Choose the order of the modules
     "modules-left": [
+        "hyprland/workspaces",
         "pulseaudio",
         "tray"
     ],
     "modules-center": [
-        "hyprland/workspaces",
     ],
     "modules-right": [
         "backlight",
@@ -41,10 +41,7 @@
             "2": "2",
             "3": "3",
             "4": "4",
-            "urgent": "",
-            "focused": "",
-            "default": "",
-            "active": "<small></small>"
+            "active": "<small></small>"
         },
         "icon-size": 14,
         "persistent-workspaces": {
@@ -58,7 +55,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d.%m.%Y}"
     },
     "backlight": {
         // "device": "acpi_video1",
