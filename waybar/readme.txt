@@ -1,1 +1,0 @@
-Original: https://github.com/k4ahr/dotfilesV2/tree/main/.config/waybar
