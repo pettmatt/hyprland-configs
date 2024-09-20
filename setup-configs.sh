@@ -13,6 +13,7 @@ if [ -L "$waybar_config_path" ] || [ -e "$waybar_config_path" ]; then
     echo "Removing existing Waybar configuration file..."
     rm -f "$waybar_config_path/config.jsonc"
     rm -f "$waybar_config_path/style.css"
+    rm -f "$waybar_config_path/macchiato.css"
 fi
 
 if [ -L "$mako_config_path" ] || [ -e "$mako_config_path" ]; then
@@ -32,8 +33,11 @@ if [ ! -d "$waybar_config_dir" ]; then
 fi
 
 # Create a symbolic link
+# Waybar
 ln -s "$hyprland_config_dir/waybar/config.jsonc" "$waybar_config_path/config.jsonc"
 ln -s "$hyprland_config_dir/waybar/style.css" "$waybar_config_path/style.css"
+ln -s "$hyprland_config_dir/waybar/macchiato.css" "$waybar_config_path/macchiato.css"
+# Mako
 ln -s "$hyprland_config_dir/mako/config" "$mako_config_path"
 
 echo "Configurations are successfully linked."
