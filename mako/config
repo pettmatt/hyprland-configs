@@ -1,23 +1,41 @@
+# Take a look at the mako manpage with the command:
+# man 5 mako
+
 # Position
 anchor=top-right
 margin=10
 
 # Style
 width=300
-padding=5
+padding=20
 border-size=2
 border-radius=2
-border-color=#4c566a
-background-color=#2e3440
-text-color=#eceff4
+border-color=#d3c6aa
+background-color=#181b1d
+text-color=#d3c6aa
+progress-color=#d3c6aa
 font=Sans 10
-
-# Animation
-animations=slide-right
 max-visible=5
 
 # Others
 max-history=20
+format=<b>%a ⏵</b> %s\n%b
+layer=overlay
 sort=-time
 markup=1
 max-visible=3
+default-timeout=10
+ignore-timeout=1
+
+[urgency=normal]
+border-color=#d08770
+
+[urgency=high]
+border-color=#bf616a
+default-timeout=0
+
+[summary~="log-.*"]
+border-color=#a3be8c
+
+[app-name=lightcord summary~="(.*(^| )orz|ORZ|sto|STO|otl|OTL( |$).*)"]
+invisible=1
