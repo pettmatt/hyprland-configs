@@ -1,9 +1,9 @@
 {
-	"position": "bottom",
-	"margin-bottom" : 5,
-	"margin-left": 10,
-	"margin-right": 10,
-	"height" : 35,
+	"position": "top",
+	"margin-bottom" : 0,
+	"margin-left": 0,
+	"margin-right": 0,
+	"height" : 30,
 	"modules-left": [
 		"custom/startup",
 		"hyprland/workspaces", 
@@ -25,12 +25,11 @@
 		"format": "{}",
 		"max-length": 25,
 		"rewrite": {
-			"": "NixOS",
+			"": "Arch",
 			".*Firefox.*": "Firefox",
 			".*Discord.*": "Discord",
-			"bash": "Terminal",
+			"kitty": "Terminal",
 			".*Code.*": "VSCode",
-	  
 		},
 		"separate-outputs": true,
 	},
@@ -70,14 +69,14 @@
 		"on-scroll-down": "playerctl previous"
 	},
 	"clock": {
-		"format": " {:%a %d-%m   %H:%M}",
+		"format": " {:%a %d.%m.   %H:%M}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"on-click" : "gnome-calendar"
 	},
-	"cpu": {
-		"format": "  {usage}%",
-		"tooltip": false
-	},
+	// "cpu": {
+	// 	"format": "  {usage}%",
+	// 	"tooltip": false
+	// },
 	"memory": {
 		"format": "  {}%"
 	},
@@ -97,13 +96,12 @@
 		"format-wifi": " ",
 		"format-ethernet": "{cidr} ",
 		"format-linked": "{ifname} (No IP) 󱚼",
-		"format-disconnected": " 󱚼 ",
-			  "on-click": "~/.config/waybar/scripts/network.sh",
+		"format-disconnected": " 󱚼 "
 	},
 	"bluetooth": {
-		"format" : "{icon}",
+		"format": "{icon}",
 		"format-icons": ["󰂯"],
-		"on-click" : "blueman-manager",
+		"on-click": "blueman-manager",
 	},
 	"pulseaudio": {
 		"format": "{icon}  {volume}%",
